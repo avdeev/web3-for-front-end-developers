@@ -235,6 +235,17 @@
     <!-- https://github.com/hitripod/awesome-blockchain -->
     <!-- https://github.com/yjjnls/awesome-blockchain -->
 
+    <section class="slide">
+      <h2>Популярные блокчейны</h2>
+      <ul>
+        <li class="next">Ethereum</li>
+        <li class="next">Cardano</li>
+        <li class="next">Solana</li>
+        <li class="next">Polkadot</li>
+        <li class="next">Tezos</li>
+      </ul>
+    </section>
+
     <section class="slide clear">
       <img class="cover h" src="pictures/What-Is-Blockchain-Infographic.jpg" alt="" />
     </section>
@@ -244,9 +255,16 @@
     </section>
 
     <section class="slide">
-      <h2 class="shout">DeFi</h2>
+      <h2>Применение</h2>
+      <ul>
+        <li class="next">Money transfer</li>
+        <li class="next">Internet of Things (IoT)</li>
+        <li class="next">Healthcare</li>
+        <li class="next">Logistics</li>
+        <li class="next">Government</li>
+        <li class="next">Media</li>
+      </ul>
     </section>
-    <!-- https://github.com/OffcierCia/DeFi-Developer-Road-Map -->
 
     <section class="slide">
       <h2 class="shout">DApps</h2>
@@ -266,6 +284,43 @@
 
     <section class="slide clear">
       <img class="cover h" src="pictures/0_0IC_eBFK9P9moXlq.png" alt="" />
+    </section>
+
+    <section class="slide clear">
+      <img class="cover h" src="pictures/web3js.png" alt="" />
+    </section>
+
+    <section class="slide">
+      <h2>web3/web3.js</h2>
+      <pre>
+        <code>const Web3 = require('web3');</code>
+        <code>const web3 = new Web3('ws://localhost:8546');</code>
+        <code>...</code>
+        <code>web3.eth.getAccounts().then(console.log);</code>
+      </pre>
+    </section>
+
+    <section class="slide">
+      <h2>wagmi</h2>
+      <pre>
+        <code><mark>import { WagmiConfig, createClient } from 'wagmi'</mark></code>
+        <code>import { getDefaultProvider } from 'ethers'</code>
+        <code> </code>
+        <code>const client = createClient({ ... });</code>
+        <code> </code>
+        <code>function App() {</code>
+        <code>  return <mark>&lt;WagmiConfig client={client}&gt;...&lt;/WagmiConfig&gt;;</mark></code>
+        <code>}</code>
+      </pre>
+    </section>
+
+    <section class="slide">
+      <h2 class="shout">DeFi</h2>
+    </section>
+    <!-- https://github.com/OffcierCia/DeFi-Developer-Road-Map -->
+
+    <section class="slide clear">
+      <img class="cover h" src="pictures/what-is-defi.jpg" alt="" />
     </section>
 
     <section class="slide">
@@ -330,7 +385,6 @@
       </ul>
     </section>
 
-    <!--
     <section class="slide">
       <h2>👏 Спасибо!</h2>
 
@@ -341,12 +395,12 @@
           🌐
           <a href="https://twitter.com/avdeev_alexey">twitter.com/avdeev_alexey</a>
         </li>
-        <li>
+        <!-- <li>
           🌐
           <a href="https://alexey-avdeev.com/web3-for-front-end-developers/"
             >alexey-avdeev.com/web3-for-front-end-developers</a
           >
-        </li>
+        </li> -->
         <li>🌐 Продуктовая лаборатория <a href="https://mish.design/">Mish</a></li>
       </ul>
 
@@ -355,7 +409,7 @@
         alt="я"
         style="height: 230px; position: absolute; right: 60px; top: 60px"
       />
-    </section> -->
+    </section>
 
     <footer class="badge">
       <a href="https://github.com/shower/shower">Fork me on GitHub</a>
