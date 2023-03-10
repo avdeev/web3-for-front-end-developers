@@ -34,10 +34,10 @@
 
       .slide {
         padding-top: 51px;
-        background-image: url("pictures/slide-cover.png");
+        background-image: url("pictures/codefest.png");
         background-repeat: no-repeat;
-        background-size: 100%;
-        background-position: center;
+        background-size: 80px;
+        background-position: calc(100% - 80px) 30px;
       }
 
       .slide.clear {
@@ -45,8 +45,8 @@
       }
 
       .slide::after {
-        top: auto;
-        bottom: 10px;
+        top: 45px;
+        bottom: auto;
         left: auto;
         right: 30px;
         background: none;
@@ -108,7 +108,7 @@
     </header>
 
     <section class="slide clear" id="cover">
-      <div style="width: 640px; padding-top: 30px; margin-left: -10px">
+      <div style="width: 640px; padding-top: 30px; margin-left: 30px">
         <h2>Что Web3 изменил во фронтенде</h2>
         <p>
           <a href="https://alexey-avdeev.com/">Алексей Авдеев</a>,
@@ -120,18 +120,20 @@
           --slide-side: 60px;
         }
         #cover {
-          background: #fff url("pictures/title-cover.png") no-repeat center center;
-          background-size: contain;
+          background-image: url("pictures/codefest.png");
+          background-repeat: no-repeat;
+          background-size: 180px;
+          background-position: calc(100% - 80px) 30px;
         }
         #cover h2 {
           margin: 0;
           color: #000;
-          font-size: 62px;
+          font-size: 100px;
         }
         #cover p {
           margin: 18px 0 0;
           color: #000;
-          font-size: 24px;
+          font-size: 34px;
         }
         #cover p a {
           color: #000;
@@ -286,6 +288,20 @@
     </section>
 
     <section class="slide">
+      <h2>web3/web3.js</h2>
+      <pre>
+        <code>const Web3 = require('web3')</code>
+        <code>const rpcURL = '' // Your RPC URL goes here</code>
+        <code>const web3 = new Web3(rpcURL)</code>
+        <code>const address = '' // Your account address goes here</code>
+        <code> </code>
+        <code>web3.eth.getBalance(address, (err, wei) => {</code>
+        <code>  <mark>balance = web3.utils.fromWei(wei, 'ether')</mark></code>
+        <code>})</code>
+      </pre>
+    </section>
+
+    <section class="slide">
       <h2>wagmi</h2>
       <pre>
         <code><mark>import { WagmiConfig, createClient } from 'wagmi'</mark></code>
@@ -337,7 +353,7 @@
       <img
         src="pictures/iam.jpeg"
         alt="я"
-        style="height: 230px; position: absolute; right: 60px; top: 60px"
+        style="height: 230px; position: absolute; right: 60px; top: 150px"
       />
     </section>
 
