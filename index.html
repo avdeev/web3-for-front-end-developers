@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-P6SW86D");
+    </script>
+    <!-- End Google Tag Manager -->
+    <title>Что Web3 изменило во фронтенде</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- prettier-ignore -->
+    <link rel="stylesheet" href="shower/themes/ribbon/styles/styles.css">
+    <style>
+      .shower {
+        --slide-ratio: calc(16 / 9);
+        --ribbon-size: 40px;
+        --slide-side: 41px;
+      }
+
+      .progress::before {
+        background-color: #ff0000;
+      }
+
+      .slide {
+        padding-top: 51px;
+        background-image: url("pictures/slide-cover.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+      }
+
+      .slide.clear {
+        background-image: none;
+      }
+
+      .slide::after {
+        top: auto;
+        bottom: 10px;
+        left: auto;
+        right: 30px;
+        background: none;
+        color: #000;
+      }
+
+      .slide h2 {
+        color: #000;
+        font-size: 60px;
+      }
+
+      .slide h2.shout {
+        font-size: 120px;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        width: 80%;
+      }
+
+      .slide .brand {
+        color: #ff0000;
+      }
+
+      .slide ol,
+      .slide ul {
+        padding-left: 40px;
+      }
+
+      .slide li {
+        font-size: 28px;
+      }
+
+      .slide pre {
+        font-size: 21px;
+        padding-left: 41px;
+      }
+
+      .cover {
+        z-index: 1;
+      }
+    </style>
+  </head>
+  <body class="shower list">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-P6SW86D"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <header class="caption">
+      <h1>Что Web3 изменило во фронтенде</h1>
+      <p>
+        <a href="https://alexey-avdeev.com/">Алексей Авдеев</a>,
+        <a href="https://mish.design/">Mish</a>
+      </p>
+    </header>
+
+    <section class="slide clear" id="cover">
+      <div style="width: 640px; padding-top: 30px; margin-left: -10px">
+        <h2>Что Web3 изменило во фронтенде</h2>
+        <p>
+          <a href="https://alexey-avdeev.com/">Алексей Авдеев</a>,
+          <a href="https://mish.design/">Mish</a>
+        </p>
+      </div>
+      <style>
+        .shower #cover {
+          --slide-side: 60px;
+        }
+        #cover {
+          background: #fff url("pictures/title-cover.png") no-repeat center center;
+          background-size: contain;
+        }
+        #cover h2 {
+          margin: 0;
+          color: #000;
+          font-size: 62px;
+        }
+        #cover p {
+          margin: 18px 0 0;
+          color: #000;
+          font-size: 24px;
+        }
+        #cover p a {
+          color: #000;
+        }
+      </style>
+    </section>
+
+    <section class="slide">
+      <h2>👨‍💻 О себе</h2>
+
+      <ol>
+        <li>
+          👨 Алексей Авдеев (<a href="https://twitter.com/avdeev_alexey"
+            >https://twitter.com/avdeev_alexey</a
+          >)
+        </li>
+        <li class="next">👔 Senior Frontend, CTO</li>
+        <li class="next">🏙️ Из Нижнего Новгорода, работаю в Москве</li>
+        <li class="next">🌐 Продуктовая лаборатория <a href="https://mish.design/">Mish</a></li>
+        <li class="next">👴 Программирую с 2002 года</li>
+      </ol>
+    </section>
+
+    <section class="slide">
+      <img class="cover w" src="pictures/jsonapi_youtube.jpg" alt="" />
+    </section>
+
+    <section class="slide">
+      <img class="cover w" src="pictures/docker_youtube.jpg" alt="" />
+    </section>
+
+    <section class="slide">
+      <img class="cover w" src="pictures/maxresdefault.jpg" alt="" />
+    </section>
+
+    <section class="slide">
+      <h2 class="shout">WWW, W3, Web</h2>
+    </section>
+
+    <section class="slide clear" style="background-color: #000">
+      <img class="cover h" src="pictures/Internet_map_1024.jpg" alt="" />
+    </section>
+
+    <section class="slide">
+      <h2 class="shout">Web 2.0</h2>
+    </section>
+    <!-- Куда вы пойдёте? В МФЦ? -->
+
+    <section class="slide">
+      <img class="cover h" src="pictures/web2-0.png" alt="" />
+    </section>
+
+    <section class="slide">
+      <h2 class="shout">Web 3.0</h2>
+    </section>
+
+    <section class="slide">
+      <img class="cover h" src="pictures/web3-0-calacanis.png" alt="" />
+    </section>
+
+    <section class="slide">
+      <img class="cover h" src="pictures/web3-0.png" alt="" />
+    </section>
+
+    <section class="slide">
+      <h2 class="shout">
+        Web 1.0<br /><span style="font-size: 0.7em">(1990&nbsp;-&nbsp;1999)</span>
+      </h2>
+    </section>
+
+    <section class="slide clear">
+      <img
+        class="cover h"
+        src="pictures/20040819_gaf_u05_002-pic4_zoom-1500x1500-15709.jpg"
+        alt=""
+      />
+    </section>
+
+    <section class="slide">
+      <h2 class="shout">
+        Web 2.0<br /><span style="font-size: 0.7em">(2004&nbsp;-&nbsp;now)</span>
+      </h2>
+    </section>
+
+    <section class="slide clear">
+      <img class="cover h" src="pictures/sipYDXxNQEY.jpg" alt="" />
+    </section>
+
+    <section class="slide">
+      <h2 class="shout">
+        Web 1.5<br /><span style="font-size: 0.7em">(1999&nbsp;-&nbsp;2004)</span>
+      </h2>
+    </section>
+
+    <section class="slide clear">
+      <img class="cover h" style="height: 70%" src="pictures/TreeExample480px.jpg" alt="" />
+    </section>
+
+    <section class="slide clear">
+      <img class="cover h" src="pictures/ntls.png" alt="" />
+    </section>
+
+    <section class="slide">
+      <h2 class="shout">
+        Web 0<br /><span style="font-size: 0.7em">(1930&nbsp;-&nbsp;1969)</span>
+      </h2>
+    </section>
+
+    <section class="slide">
+      <h2 class="shout">
+        Web 0.5<br /><span style="font-size: 0.7em">(1969&nbsp;-&nbsp;1990)</span>
+      </h2>
+    </section>
+
+    <section class="slide">
+      <h2 class="shout">
+        Web 3.0<br /><span style="font-size: 0.7em">(блокчейн?, ?&nbsp;-&nbsp;2030)</span>
+      </h2>
+    </section>
+    <!-- https://github.com/JoinColony/awesome-web3 -->
+    <!-- https://github.com/ahmet/awesome-web3 -->
+
+    <section class="slide">
+      <h2 class="shout">Web 2.5<br /><span style="font-size: 0.7em">(now)</span></h2>
+    </section>
+
+    <section class="slide clear">
+      <img class="cover h" src="pictures/web2_5_1280px.webp" alt="" />
+    </section>
+
+    <section class="slide">
+      <h2 class="shout">
+        Web 4.0<br /><span style="font-size: 0.7em">(нейронет, 2030&nbsp;-&nbsp;2040)</span>
+      </h2>
+    </section>
+
+    <section class="slide">
+      <h2 class="shout">Таймлайн</h2>
+    </section>
+
+    <section class="slide clear">
+      <img class="cover h" src="pictures/Web_as_decades.jpg" alt="" />
+    </section>
+
+    <section class="slide clear">
+      <img class="cover h" src="pictures/futureinternet-04-00852-g001.webp" alt="" />
+    </section>
+
+    <section class="slide">
+      <img class="cover w" src="pictures/web3.png" alt="" />
+    </section>
+
+    <section class="slide">
+      <h2 class="shout brand">Сложно</h2>
+    </section>
+
+    <section class="slide">
+      <h2 class="shout">Какая сейчас версия?</h2>
+    </section>
+
+    <section class="slide">
+      <h2 class="shout">Web 2.0?</h2>
+    </section>
+
+    <section class="slide">
+      <h2 class="shout">Web 3.0?</h2>
+    </section>
+
+    <section class="slide">
+      <h2 class="shout">Web 2.5?</h2>
+    </section>
+
+    <section class="slide">
+      <h2 class="shout" style="font-size: 3.5em">
+        Web 108.0.5359.124 (Официальная сборка), (x86_64)?
+      </h2>
+    </section>
+
+    <section class="slide">
+      <h2 class="shout brand">Уже было</h2>
+    </section>
+
+    <section class="slide">
+      <h2>HTML</h2>
+      <ul>
+        <li class="next">HTML</li>
+        <li class="next">HTML 2.0</li>
+        <li class="next">HTML 3.0</li>
+        <li class="next">HTML 4</li>
+        <li class="next">HTML 5</li>
+        <li class="next"><b>HTML Living Standard</b></li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <img class="cover h" src="pictures/html_living_standart.png" alt="" />
+    </section>
+
+    <section class="slide">
+      <h2>CSS</h2>
+      <ul>
+        <li class="next">CSS 1</li>
+        <li class="next">CSS 2</li>
+        <li class="next">CSS 2.1</li>
+        <li class="next">CSS 3</li>
+        <li class="next"><b>CSS Living Standard</b></li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <img class="cover h" src="pictures/css.png" alt="" />
+    </section>
+
+    <section class="slide">
+      <h2>Технологии</h2>
+      <ul>
+        <li class="next">Виртуальная реальность (VR)</li>
+        <li class="next">Дополненная реальность (AR)</li>
+        <li class="next">Искуственный интеллект (AI, ИИ)</li>
+        <li class="next">Нейрокомпьютерный интерфейс (BCI)</li>
+        <li class="next">Интернет вещей (IoT)</li>
+        <li class="next">Метавселенные</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2 class="shout brand">&nbsp;Интернет&nbsp;— живой стандарт</h2>
+    </section>
+
+    <section class="slide">
+      <h2 class="shout">Blockchain</h2>
+    </section>
+    <!-- https://github.com/hitripod/awesome-blockchain -->
+    <!-- https://github.com/yjjnls/awesome-blockchain -->
+
+    <section class="slide">
+      <h2>Популярные блокчейны</h2>
+      <ul>
+        <li class="next">Ethereum</li>
+        <li class="next">Cardano</li>
+        <li class="next">Solana</li>
+        <li class="next">Polkadot</li>
+        <li class="next">Tezos</li>
+      </ul>
+    </section>
+
+    <section class="slide clear">
+      <img class="cover h" src="pictures/erachain.png" alt="" />
+    </section>
+
+    <section class="slide clear">
+      <img class="cover h" src="pictures/vknft.jpg" alt="" />
+    </section>
+
+    <section class="slide clear">
+      <img class="cover h" src="pictures/0xmint.png" alt="" />
+    </section>
+
+    <section class="slide clear">
+      <img class="cover w" src="pictures/blockchains.png" alt="" />
+    </section>
+
+    <section class="slide clear">
+      <img class="cover w" src="pictures/total_tvl.png" alt="" />
+    </section>
+
+    <section class="slide clear">
+      <img class="cover h" src="pictures/What-Is-Blockchain-Infographic.jpg" alt="" />
+    </section>
+
+    <section class="slide clear">
+      <img class="cover h" src="pictures/What-Is-Blockchain-Process.jpg" alt="" />
+    </section>
+
+    <section class="slide">
+      <h2>Применение</h2>
+      <ul>
+        <li class="next">Money transfer</li>
+        <li class="next">Internet of Things (IoT)</li>
+        <li class="next">Healthcare</li>
+        <li class="next">Logistics</li>
+        <li class="next">Government</li>
+        <li class="next">Media</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2 class="shout">DApps</h2>
+    </section>
+
+    <section class="slide clear">
+      <img class="cover w" src="pictures/silicon-valley-s1-1920x1080.jpg" alt="" />
+    </section>
+
+    <section class="slide clear">
+      <img class="cover h" src="pictures/CAM_6874_02_F01.jpg" alt="" />
+    </section>
+
+    <section class="slide clear">
+      <img class="cover h" src="pictures/1_L5ApbOvu0Pf-oRXFYd3vkA.png" alt="" />
+    </section>
+
+    <section class="slide clear">
+      <img class="cover h" src="pictures/0_0IC_eBFK9P9moXlq.png" alt="" />
+    </section>
+
+    <section class="slide clear">
+      <img class="cover h" src="pictures/web3js.png" alt="" />
+    </section>
+
+    <section class="slide">
+      <h2>web3/web3.js</h2>
+      <pre>
+        <code>const Web3 = require('web3');</code>
+        <code>const web3 = new Web3('ws://localhost:8546');</code>
+        <code>...</code>
+        <code>web3.eth.getAccounts().then(console.log);</code>
+      </pre>
+    </section>
+
+    <section class="slide">
+      <h2>wagmi</h2>
+      <pre>
+        <code><mark>import { WagmiConfig, createClient } from 'wagmi'</mark></code>
+        <code>import { getDefaultProvider } from 'ethers'</code>
+        <code> </code>
+        <code>const client = createClient({ ... });</code>
+        <code> </code>
+        <code>function App() {</code>
+        <code>  return <mark>&lt;WagmiConfig client={client}&gt;...&lt;/WagmiConfig&gt;;</mark></code>
+        <code>}</code>
+      </pre>
+    </section>
+
+    <section class="slide">
+      <h2 class="shout">DeFi</h2>
+    </section>
+    <!-- https://github.com/OffcierCia/DeFi-Developer-Road-Map -->
+
+    <section class="slide clear">
+      <img class="cover h" src="pictures/what-is-defi.jpg" alt="" />
+    </section>
+
+    <section class="slide">
+      <h2 class="shout">NFT</h2>
+    </section>
+
+    <section class="slide clear">
+      <img class="cover h" src="pictures/chayka-boredapeclub.webp" alt="" />
+    </section>
+
+    <section class="slide">
+      <h2 class="shout">Web3 as a service</h2>
+    </section>
+
+    <!-- https://www.infura.io/ -->
+    <section class="slide clear">
+      <img class="cover w" src="pictures/influra.png" alt="" />
+    </section>
+
+    <!-- https://www.quicknode.com/ -->
+    <section class="slide clear">
+      <img class="cover w" src="pictures/quicknode.png" alt="" />
+    </section>
+
+    <section class="slide">
+      <h2 class="shout brand">Другие технологии</h2>
+    </section>
+
+    <section class="slide">
+      <h2 class="shout">Метавселенные</h2>
+    </section>
+
+    <section class="slide clear">
+      <img
+        class="cover w"
+        src="pictures/01X89kcWfqMWYWOVRucB7Ll-5.fit_lim.size_1600x900.v1661366875.png"
+        alt=""
+      />
+    </section>
+
+    <section class="slide clear">
+      <img class="cover w" src="pictures/Mesh-for-Teams-hero-1333x750-1.webp" alt="" />
+    </section>
+
+    <section class="slide clear">
+      <img class="cover h" src="pictures/vr_glass.jpg" alt="" />
+    </section>
+
+    <section class="slide">
+      <h2 class="shout brand">Что Web3 изменило во фронтенде</h2>
+    </section>
+
+    <section class="slide">
+      <h2>👏 Спасибо!</h2>
+
+      <ul>
+        <li>👨 Алексей Авдеев</li>
+        <li>🌐 <a href="https://github.com/avdeev">github.com/avdeev</a></li>
+        <li>
+          🌐
+          <a href="https://twitter.com/avdeev_alexey">twitter.com/avdeev_alexey</a>
+        </li>
+        <li>🌐 Продуктовая лаборатория <a href="https://mish.design/">Mish</a></li>
+      </ul>
+
+      <img
+        src="pictures/iam.jpeg"
+        alt="я"
+        style="height: 230px; position: absolute; right: 60px; top: 60px"
+      />
+    </section>
+
+    <footer class="badge">
+      <a href="https://github.com/shower/shower">Fork me on GitHub</a>
+    </footer>
+
+    <div class="progress"></div>
+
+    <script src="shower/shower.js"></script>
+    <!-- Copyright © 2021 Yours Truly, Famous Inc. -->
+  </body>
+</html>
