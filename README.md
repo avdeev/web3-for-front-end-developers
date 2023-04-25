@@ -1,6 +1,6 @@
 # Web3 для фронтендера
 
-- [Слайды](https://alexey-avdeev.com/how-web3-changes-the-frontend/)
+- [Слайды](https://alexey-avdeev.com/web3-for-front-end-developers/)
 - [Доклад в программе CodeFest 23](https://13.codefest.ru/lecture/2254)
 
 Мы знаем термин Web3 уже 9 лет. Мало кто не слышал о блокчейне или криптовалютах. Считается, что это новая эпоха развития Интернета, его третья версия.
