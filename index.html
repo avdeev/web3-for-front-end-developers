@@ -354,6 +354,38 @@
     </section>
 
     <section class="slide">
+      <h2 class="shout">Web3 Auth</h2>
+    </section>
+
+    <section class="slide">
+      <h2 class="shout">Connect wallet</h2>
+    </section>
+
+    <section class="slide">
+      <h2>Connect wallet (1)</h2>
+      <pre>
+        <code>&lt;script src=&quot;https://.../web3.min.js&quot;&gt;&lt;/script&gt;</code>
+        <code>&lt;input</code>
+        <code>  type=&quot;button&quot;</code>
+        <code>  value=&quot;Connect Wallet&quot;</code>
+        <code>  onclick=&quot;<mark>connect();</mark>&quot;</code>
+        <code>&gt;</code>
+      </pre>
+    </section>
+
+    <section class="slide">
+      <h2>Connect wallet (2)</h2>
+      <pre>
+        <code>async function connect() {</code>
+        <code>  if (!window.ethereum) return;</code>
+        <code>  <mark>await window.ethereum.request({ method: "eth_requestAccounts" });</mark></code>
+        <code>  window.web3 = new Web3(window.ethereum);</code>
+        <code>  console.log(`Wallet: ${account.givenProvider.selectedAddress}`);</code>
+        <code>}</code>
+      </pre>
+    </section>
+
+    <section class="slide">
       <h2 class="shout brand">Тестирование</h2>
     </section>
 
