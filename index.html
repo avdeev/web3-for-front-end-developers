@@ -462,29 +462,30 @@
     <!-- Как создать dApp за три шага -->
 
     <section class="slide">
-      <h2 class="shout brand">Хранилище ➡️ Блокчейн</h2>
+      <h2 class="shout brand">Хранилище ➡️ <br />Блокчейн</h2>
     </section>
 
     <section class="slide clear">
       <img class="cover h" src="pictures/What-Is-Blockchain-Infographic.jpg" alt="" />
     </section>
 
-    <!-- TODO -->
+    <!-- TODO: не читается -->
     <section class="slide clear">
       <img class="cover w" src="pictures/blockchains.png" alt="" />
     </section>
 
+    <!-- TODO: не читается -->
     <section class="slide clear">
       <img class="cover w" src="pictures/total_tvl.png" alt="" />
     </section>
 
-    <!-- TODO -->
+    <!-- TODO: перенести -->
     <section class="slide clear">
       <img class="cover h" src="pictures/erachain.png" alt="" />
     </section>
 
     <section class="slide">
-      <h2 class="shout brand">Бэкенд ➡️ Смарт-контракт</h2>
+      <h2 class="shout brand">Бэкенд ➡️<br />Смарт-контракт</h2>
     </section>
 
     <section class="slide">
@@ -514,10 +515,6 @@
 
     <section class="slide clear">
       <img class="cover h" src="pictures/geth.png" alt="" />
-    </section>
-
-    <section class="slide clear">
-      <img class="cover w" src="pictures/web3-js-diagram.png" alt="" style="width: 90%" />
     </section>
 
     <section class="slide">
@@ -571,7 +568,7 @@
         <code> </code>
         <code>const abi = [...];</code>
         <code>const address = "0xe435e2a3cb5dc62c75d8bb2dba8470771405911d";</code>
-        <code>const contract = new web3.eth.Contract(abi, address);</code>
+        <code>const contract = <mark>new web3.eth.Contract(abi, address);</mark></code>
         <code> </code>
         <code><mark>contract.methods.getValue().call().then(console.log);</mark></code>
       </pre>
@@ -594,12 +591,12 @@
       <h2>Читаем данные из блокчейна</h2>
       <pre>
         <code>import Web3 from 'web3'</code>
-        <code>const web3 = new Web3("https://mainnet.infura.io/v3/endpoint")</code>
+        <code>const web3 = new Web3(<mark>"https://mainnet.infura.io/v3/endpoint"</mark>)</code>
         <code> </code>
-        <code>web3.eth.getBalance("0x1b3cB81E51011...").then(console.log)</code>
+        <code><mark>web3.eth.getBalance("0x1b3cB81E51011...")</mark>.then(console.log)</code>
         <code>// result: BigInt(560000000065000000000000)</code>
         <code> </code>
-        <code>web3.eth.getBlockNumber().then(console.log)</code>
+        <code><mark>web3.eth.getBlockNumber()</mark>.then(console.log)</code>
         <code>// result: BigInt(13497160)</code>
       </pre>
     </section>
@@ -654,12 +651,12 @@
     </section>
 
     <section class="slide">
-      <h2 class="shout">Для React</h2>
+      <h2 class="shout">Реализации для React</h2>
     </section>
 
     <section class="slide">
-      <h2>Для React</h2>
-      <ul>
+      <h2>Реализации для React</h2>
+      <ul class="big">
         <li class="next">web3-react</li>
         <li class="next">useDApp</li>
         <li class="next"><b>wagmi</b></li>
@@ -667,17 +664,23 @@
     </section>
 
     <section class="slide">
-      <h2>Connect wallet (1)</h2>
-      <pre>npm install @web3modal/ethereum @web3modal/react wagmi viem</pre>
+      <h2>Connect wallet для React (1)</h2>
+      <pre>
+        <code>npm install</code>
+        <code>  wagmi</code>
+        <code>  viem</code>
+        <code>  @web3modal/ethereum</code>
+        <code>  <mark>@web3modal/react</mark></code>
+      </pre>
     </section>
 
     <section class="slide">
-      <h2>Connect wallet (2)</h2>
+      <h2>Connect wallet для React (2)</h2>
       <pre>
         <code>import { Web3Button } from '@web3modal/react'</code>
         <code> </code>
         <code>function HomePage() {</code>
-        <code>  return &lt;Web3Button /&gt;</code>
+        <code>  return <mark>&lt;Web3Button /&gt;</mark></code>
         <code>}</code>
       </pre>
     </section>
