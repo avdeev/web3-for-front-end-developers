@@ -86,6 +86,14 @@
         font-size: 28px;
       }
 
+      .slide ul.big {
+        padding-left: 50px;
+      }
+
+      .slide ul.big li {
+        font-size: 40px;
+      }
+
       .slide pre {
         font-size: 21px;
         padding-left: 41px;
@@ -178,6 +186,14 @@
     </section>
 
     <section class="slide">
+      <h2 class="shout">WWW, W3, Web</h2>
+    </section>
+
+    <section class="slide clear" style="background-color: #000">
+      <img class="cover h" src="pictures/Internet_map_1024.jpg" alt="" />
+    </section>
+
+    <section class="slide">
       <h2 class="shout">Web 2.0</h2>
     </section>
     <!-- Куда вы пойдёте? В МФЦ? -->
@@ -249,16 +265,21 @@
 
     <section class="slide">
       <div style="font-size: 3em; text-align: center; line-height: 1.5em; font-weight: bold">
-        Web 3.0<br />Web 3<br />Web3<br /><s>W3</s><br />
+        Web 3.0<br />
+        <span class="next">Web 3<br /> </span><span class="next">Web3</span><br />
+        <span class="next"><s>W3</s></span
+        ><br />
       </div>
     </section>
 
     <section class="slide">
-      <h2 class="shout small">Децентрализованная<br />сеть</h2>
+      <h2 class="shout small">Децентрализованный<br />Интернет</h2>
     </section>
 
     <section class="slide">
-      <h2 class="shout brand">DApps</h2>
+      <h2 class="shout brand small">
+        Децентрализованное приложение<br /><span style="font-size: 0.7em">(DApps, dApp)</span>
+      </h2>
     </section>
 
     <section class="slide clear">
@@ -267,10 +288,6 @@
 
     <section class="slide clear">
       <img class="cover h" src="pictures/centralized.jpg" alt="" />
-    </section>
-
-    <section class="slide clear">
-      <img class="cover h" src="pictures/1_L5ApbOvu0Pf-oRXFYd3vkA.png" alt="" />
     </section>
 
     <section class="slide">
@@ -394,6 +411,18 @@
       <img class="cover h" src="pictures/0xmint.png" alt="" />
     </section>
 
+    <section class="slide">
+      <h2 class="shout">Web 2.5</h2>
+    </section>
+
+    <section class="slide clear">
+      <img class="cover h" src="pictures/web2_5_1280px.webp" alt="" />
+    </section>
+
+    <section class="slide clear" style="background-color: #060606">
+      <img class="cover h" src="pictures/vknft1.jpg" alt="" />
+    </section>
+
     <!-- https://shardeum.org/blog/what-are-decentralized-applications/#What_are_the_Key_Advantages_of_DApps_over_Traditional_Apps -->
     <section class="slide">
       <h2 class="shout brand">Преимущества</h2>
@@ -408,14 +437,6 @@
     </section>
 
     <section class="slide">
-      <h2 class="shout">Децентрализованность</h2>
-    </section>
-
-    <section class="slide">
-      <h2 class="shout">Быстрые циклы разработки</h2>
-    </section>
-
-    <section class="slide">
       <h2 class="shout">Нулевое время простоя</h2>
     </section>
 
@@ -427,39 +448,28 @@
       <h2 class="shout brand">Архитектура</h2>
     </section>
 
-    <section class="slide clear">
-      <img class="cover h" src="pictures/web2_vs_web3.png" alt="" style="height: 90%" />
+    <section class="slide">
+      <h2>Архитектура</h2>
+      <ul class="big">
+        <li class="next">Хранилище ➡️ Блокчейн</li>
+        <li class="next">Бэкенд ➡️ Смарт-контракт</li>
+        <li class="next">🆕 Node Provider</li>
+        <li class="next">Фронтенд</li>
+      </ul>
     </section>
 
     <!-- https://habr.com/ru/articles/682668/ -->
-    <section class="slide clear">
-      <img class="cover h" src="pictures/dapss-arch.png" alt="" />
-    </section>
+    <!-- Как создать dApp за три шага -->
 
     <section class="slide">
-      <h2 class="shout">Web 2.5<br /><span style="font-size: 0.7em">(now)</span></h2>
-    </section>
-
-    <section class="slide clear">
-      <img class="cover h" src="pictures/web2_5_1280px.webp" alt="" />
-    </section>
-
-    <section class="slide">
-      <img class="cover h" src="pictures/vknft.jpg" alt="" />
-    </section>
-
-    <section class="slide">
-      <h2 class="shout brand">Блокчейн</h2>
+      <h2 class="shout brand">Хранилище ➡️ Блокчейн</h2>
     </section>
 
     <section class="slide clear">
       <img class="cover h" src="pictures/What-Is-Blockchain-Infographic.jpg" alt="" />
     </section>
 
-    <section class="slide clear">
-      <img class="cover h" src="pictures/What-Is-Blockchain-Process.jpg" alt="" />
-    </section>
-
+    <!-- TODO -->
     <section class="slide clear">
       <img class="cover w" src="pictures/blockchains.png" alt="" />
     </section>
@@ -468,12 +478,38 @@
       <img class="cover w" src="pictures/total_tvl.png" alt="" />
     </section>
 
+    <!-- TODO -->
     <section class="slide clear">
       <img class="cover h" src="pictures/erachain.png" alt="" />
     </section>
 
     <section class="slide">
-      <h2 class="shout brand">Node Provider</h2>
+      <h2 class="shout brand">Бэкенд ➡️ Смарт-контракт</h2>
+    </section>
+
+    <section class="slide">
+      <h2>Hello World</h2>
+      <pre>
+        <code>// HelloWorld.sol</code>
+        <code>pragma solidity ^0.8.17;</code>
+        <code> </code>
+        <code>contract HelloWorld {</code>
+        <code>    string public greet = "Hello World!";</code>
+        <code>}</code>
+      </pre>
+    </section>
+
+    <!-- https://etherscan.io/address/0xb1690C08E213a35Ed9bAb7B318DE14420FB57d8C -->
+    <section class="slide clear">
+      <img class="cover h" src="pictures/cryptokitties_smart.png" alt="" />
+    </section>
+
+    <section class="slide clear">
+      <img class="cover h" src="pictures/cryptokitties_smart_2.png" alt="" />
+    </section>
+
+    <section class="slide">
+      <h2 class="shout brand">🆕 Node Provider</h2>
     </section>
 
     <section class="slide clear">
@@ -485,7 +521,7 @@
     </section>
 
     <section class="slide">
-      <h2 class="shout brand">Web3 as a service</h2>
+      <h2 class="shout">Web3 as a service</h2>
     </section>
 
     <!-- https://www.infura.io/ -->
@@ -504,20 +540,81 @@
     </section>
 
     <section class="slide">
-      <h2 class="shout brand">Смарт-контракты</h2>
-    </section>
-
-    <!-- https://etherscan.io/address/0xb1690C08E213a35Ed9bAb7B318DE14420FB57d8C -->
-    <section class="slide clear">
-      <img class="cover h" src="pictures/cryptokitties_smart.png" alt="" />
+      <h2 class="shout brand">Фронтенд</h2>
     </section>
 
     <section class="slide clear">
-      <img class="cover h" src="pictures/cryptokitties_smart_2.png" alt="" />
+      <img class="cover h" src="pictures/ethers.js-vs-web3.js_.jpg" alt="" />
     </section>
 
     <section class="slide">
-      <h2 class="shout brand">Фронтенд</h2>
+      <h2>Ethereum Provider</h2>
+      <ul>
+        <li class="next">buidler.dev</li>
+        <li class="next">ethers.js</li>
+        <li class="next">eth-provider</li>
+        <li class="next">MetaMask</li>
+        <li class="next">WalletConnect</li>
+        <li class="next"><b>web3.js</b></li>
+      </ul>
+    </section>
+
+    <section class="slide clear">
+      <img class="cover h" src="pictures/web3js.png" alt="" />
+    </section>
+
+    <section class="slide">
+      <h2>Вызываем метод смарт-контракта</h2>
+      <pre>
+        <code>import Web3 from 'web3'</code>
+        <code>const web3 = new Web3(Web3.givenProvider || "ws://localhost:8545");</code>
+        <code> </code>
+        <code>const abi = [...];</code>
+        <code>const address = "0xe435e2a3cb5dc62c75d8bb2dba8470771405911d";</code>
+        <code>const contract = new web3.eth.Contract(abi, address);</code>
+        <code> </code>
+        <code><mark>contract.methods.getValue().call().then(console.log);</mark></code>
+      </pre>
+    </section>
+
+    <section class="slide">
+      <h2>Подписываемся смарт-контракт</h2>
+      <pre>
+        <code>...</code>
+        <code>const abi = [...];</code>
+        <code>const address = "0xe435e2a3cb5dc62c75d8bb2dba8470771405911d";</code>
+        <code>const contract = new web3.eth.Contract(abi, address);</code>
+        <code> </code>
+        <code><mark>const subscription = await contract.events.VALUE_CHANGE();</mark></code>
+        <code><mark>subscription.on("data", console.log);</mark></code>
+      </pre>
+    </section>
+
+    <section class="slide">
+      <h2>Читаем данные из блокчейна</h2>
+      <pre>
+        <code>import Web3 from 'web3'</code>
+        <code>const web3 = new Web3("https://mainnet.infura.io/v3/endpoint")</code>
+        <code> </code>
+        <code>web3.eth.getBalance("0x1b3cB81E51011...").then(console.log)</code>
+        <code>// result: BigInt(560000000065000000000000)</code>
+        <code> </code>
+        <code>web3.eth.getBlockNumber().then(console.log)</code>
+        <code>// result: BigInt(13497160)</code>
+      </pre>
+    </section>
+
+    <section class="slide">
+      <h2>Полезные утилиты</h2>
+      <pre>
+        <code>Web3.utils.sha3("example")</code>
+        <code>// '0x6fd43e7cffc31bb581d7421c8698e29aa2bd8e7186a394b85299908b4eb9b175'</code>
+        <code> </code>
+        <code>Web3.utils.toWei('1', 'ether') // 1000000000000000000</code>
+        <code>Web3.utils.toWei('1', 'gwei') // 1000000000</code>
+        <code> </code>
+        <code>Web3.utils.padLeft('0x3456ff', 20); // '0x000000000000003456ff'</code>
+      </pre>
     </section>
 
     <section class="slide">
@@ -530,59 +627,6 @@
 
     <section class="slide clear">
       <img class="cover w" src="pictures/sing_in_buttons.png" alt="" />
-    </section>
-
-    <section class="slide clear">
-      <img class="cover h" src="pictures/web3modal.png" alt="" />
-    </section>
-
-    <!-- TODO -->
-    <!-- <section class="slide">
-      <h2 class="shout">Web3 Auth</h2>
-    </section> -->
-
-    <section class="slide">
-      <h2 class="shout">Signer</h2>
-    </section>
-
-    <section class="slide clear">
-      <img class="cover h" src="pictures/metamask.png" alt="" />
-    </section>
-
-    <section class="slide clear">
-      <img class="cover h" src="pictures/networkDetails.png" alt="" />
-    </section>
-
-    <section class="slide clear">
-      <img class="cover h" src="pictures/ethers.js-vs-web3.js_.jpg" alt="" />
-    </section>
-
-    <section class="slide clear">
-      <img class="cover h" src="pictures/web3js.png" alt="" />
-    </section>
-
-    <section class="slide">
-      <h2>web3/web3.js</h2>
-      <pre>
-        <code>const Web3 = require('web3');</code>
-        <code>const web3 = new Web3('ws://localhost:8546');</code>
-        <code>...</code>
-        <code>web3.eth.getAccounts().then(console.log);</code>
-      </pre>
-    </section>
-
-    <section class="slide">
-      <h2>web3/web3.js</h2>
-      <pre>
-        <code>const Web3 = require('web3')</code>
-        <code>const rpcURL = '' // Your RPC URL goes here</code>
-        <code>const web3 = new Web3(rpcURL)</code>
-        <code>const address = '' // Your account address goes here</code>
-        <code> </code>
-        <code>web3.eth.getBalance(address, (err, wei) => {</code>
-        <code>  <mark>balance = web3.utils.fromWei(wei, 'ether')</mark></code>
-        <code>})</code>
-      </pre>
     </section>
 
     <section class="slide">
@@ -609,9 +653,42 @@
       </pre>
     </section>
 
+    <section class="slide">
+      <h2 class="shout">Для React</h2>
+    </section>
+
+    <section class="slide">
+      <h2>Для React</h2>
+      <ul>
+        <li class="next">web3-react</li>
+        <li class="next">useDApp</li>
+        <li class="next"><b>wagmi</b></li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Connect wallet (1)</h2>
+      <pre>npm install @web3modal/ethereum @web3modal/react wagmi viem</pre>
+    </section>
+
+    <section class="slide">
+      <h2>Connect wallet (2)</h2>
+      <pre>
+        <code>import { Web3Button } from '@web3modal/react'</code>
+        <code> </code>
+        <code>function HomePage() {</code>
+        <code>  return &lt;Web3Button /&gt;</code>
+        <code>}</code>
+      </pre>
+    </section>
+
+    <section class="slide clear">
+      <img class="cover h" src="pictures/web3modal.png" alt="" />
+    </section>
+
     <!-- зачем это? -->
     <!-- https://bitpay.com/blog/crypto-wallet-addresses -->
-    <section class="slide">
+    <!-- <section class="slide">
       <h2>Addresses</h2>
       <pre>
         <code>bc1d42UNb54eBiGm0qEM0h6r2h8n532to9jtp186ns // Segwit or Bech32</code>
@@ -623,7 +700,7 @@
         <code>qrvax3jgtwqssnkpctlqdl0rq7rjn0l0hgny8pt0hp // Bitcoin Cash</code>
         <code>D7wbmbjBWG5HPkT6d4gh6SdQPp6z25vcF2 // Dogecoin</code>
       </pre>
-    </section>
+    </section> -->
 
     <section class="slide">
       <h2 class="shout brand">Тестирование</h2>
@@ -634,19 +711,19 @@
     </section>
 
     <section class="slide">
+      <h2 class="shout small">Mainnet<br />(основная сеть)</h2>
+    </section>
+
+    <section class="slide">
+      <h2 class="shout small">Testnet<br />(тестовая сеть)</h2>
+    </section>
+
+    <section class="slide">
       <h2 class="shout">Транзакции платные</h2>
     </section>
 
     <section class="slide clear">
       <img class="cover h" src="pictures/gas-price.png" alt="" />
-    </section>
-
-    <section class="slide">
-      <h2 class="shout">Mainnet</h2>
-    </section>
-
-    <section class="slide">
-      <h2 class="shout">Testnet</h2>
     </section>
 
     <!-- https://hardhat.org/ -->
@@ -683,12 +760,25 @@
       <pre>
         <code>$ npx hardhat node</code>
         <code>Started HTTP and WebSocket JSON-RPC server at http://127.0.0.1:8545/</code>
+        <code> </code>
+        <code>Accounts</code>
+        <code>========</code>
+        <code>Account #0: 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266 (10000 ETH)</code>
+        <code>Private Key: 0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efca...</code>
       </pre>
+    </section>
+
+    <section class="slide clear">
+      <img class="cover h" src="pictures/networkDetails.png" alt="" />
     </section>
 
     <!-- Рецепт создания dApps -->
     <section class="slide">
-      <h2 class="shout">Рецепт</h2>
+      <h2 class="shout brand">Чеклист</h2>
+    </section>
+
+    <section class="slide clear">
+      <img class="cover h" src="pictures/checklist.png" alt="" />
     </section>
 
     <section class="slide">
