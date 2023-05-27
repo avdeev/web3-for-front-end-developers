@@ -462,7 +462,12 @@
     <!-- Как создать dApp за три шага -->
 
     <section class="slide">
-      <h2 class="shout brand">Хранилище ➡️ <br />Блокчейн</h2>
+      <h2 class="shout brand">Хранилище<br />➡️<br />Блокчейн</h2>
+    </section>
+
+    <!-- TODO: перенести -->
+    <section class="slide clear">
+      <img class="cover h" src="pictures/erachain.png" alt="" />
     </section>
 
     <section class="slide clear">
@@ -471,21 +476,16 @@
 
     <!-- TODO: не читается -->
     <section class="slide clear">
-      <img class="cover w" src="pictures/blockchains.png" alt="" />
+      <img class="cover w" src="pictures/blockchains.avif" alt="" />
     </section>
 
     <!-- TODO: не читается -->
-    <section class="slide clear">
+    <!-- <section class="slide clear">
       <img class="cover w" src="pictures/total_tvl.png" alt="" />
-    </section>
-
-    <!-- TODO: перенести -->
-    <section class="slide clear">
-      <img class="cover h" src="pictures/erachain.png" alt="" />
-    </section>
+    </section> -->
 
     <section class="slide">
-      <h2 class="shout brand">Бэкенд ➡️<br />Смарт-контракт</h2>
+      <h2 class="shout brand">Бэкенд<br />➡️<br />Смарт-контракт</h2>
     </section>
 
     <section class="slide">
@@ -604,13 +604,13 @@
     <section class="slide">
       <h2>Полезные утилиты</h2>
       <pre>
-        <code>Web3.utils.sha3("example")</code>
+        <code><mark>Web3.utils.sha3("example")</mark></code>
         <code>// '0x6fd43e7cffc31bb581d7421c8698e29aa2bd8e7186a394b85299908b4eb9b175'</code>
         <code> </code>
-        <code>Web3.utils.toWei('1', 'ether') // 1000000000000000000</code>
-        <code>Web3.utils.toWei('1', 'gwei') // 1000000000</code>
+        <code><mark>Web3.utils.toWei('1', 'ether')</mark> // 1000000000000000000</code>
+        <code><mark>Web3.utils.toWei('1', 'gwei')</mark> // 1000000000</code>
         <code> </code>
-        <code>Web3.utils.padLeft('0x3456ff', 20); // '0x000000000000003456ff'</code>
+        <code><mark>Web3.utils.padLeft('0x3456ff', 20);</mark> // '0x000000000000003456ff'</code>
       </pre>
     </section>
 
@@ -663,6 +663,10 @@
       </ul>
     </section>
 
+    <section class="slide clear">
+      <img class="cover h" src="pictures/web3modal.png" alt="" />
+    </section>
+
     <section class="slide">
       <h2>Connect wallet для React (1)</h2>
       <pre>
@@ -683,10 +687,6 @@
         <code>  return <mark>&lt;Web3Button /&gt;</mark></code>
         <code>}</code>
       </pre>
-    </section>
-
-    <section class="slide clear">
-      <img class="cover h" src="pictures/web3modal.png" alt="" />
     </section>
 
     <!-- зачем это? -->
@@ -725,29 +725,29 @@
       <h2 class="shout">Транзакции платные</h2>
     </section>
 
-    <section class="slide clear">
+    <section class="slide">
       <img class="cover h" src="pictures/gas-price.png" alt="" />
     </section>
 
     <!-- https://hardhat.org/ -->
-    <section class="slide clear">
+    <section class="slide">
       <img class="cover h" src="pictures/hardhat.png" alt="" />
     </section>
 
     <section class="slide">
       <h2>Hardhat</h2>
       <pre>
-        <code>mkdir my-smart-contract</code>
-        <code>cd my-smart-contract</code>
-        <code>npm init</code>
-        <code>npm install --save-dev hardhat</code>
+        <code>$ mkdir my-smart-contract</code>
+        <code>$ cd my-smart-contract</code>
+        <code>$ npm init</code>
+        <code>$ npm install --save-dev hardhat</code>
       </pre>
     </section>
 
     <section class="slide">
       <h2>Hardhat</h2>
       <pre>
-        <code>npx hardhat</code>
+        <code>$ <mark>npx hardhat</mark></code>
         <code> </code>
 
         <code>? What do you want to do? …</code>
@@ -761,7 +761,7 @@
     <section class="slide">
       <h2>Hardhat</h2>
       <pre>
-        <code>$ npx hardhat node</code>
+        <code>$ <mark>npx hardhat node</mark></code>
         <code>Started HTTP and WebSocket JSON-RPC server at http://127.0.0.1:8545/</code>
         <code> </code>
         <code>Accounts</code>
