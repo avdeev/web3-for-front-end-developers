@@ -273,7 +273,9 @@
     </section>
 
     <section class="slide">
-      <h2 class="shout small">Децентрализованный<br />Интернет</h2>
+      <h2 class="shout small">
+        Децентрализованный Интернет<br /><span style="font-size: 0.7em">(блокчейн, токены)</span>
+      </h2>
     </section>
 
     <section class="slide">
@@ -313,6 +315,10 @@
 
     <section class="slide clear">
       <img class="cover w" src="pictures/trustwallet.png" alt="" />
+    </section>
+
+    <section class="slide clear">
+      <img class="cover h" src="pictures/google_chrome.png" alt="" style="height: 90%" />
     </section>
 
     <section class="slide">
@@ -492,7 +498,7 @@
       <h2>Hello World</h2>
       <pre>
         <code>// HelloWorld.sol</code>
-        <code>pragma solidity ^0.8.17;</code>
+        <code><mark>pragma solidity ^0.8.17;</mark></code>
         <code> </code>
         <code>contract HelloWorld {</code>
         <code>    string public greet = "Hello World!";</code>
@@ -564,7 +570,7 @@
       <h2>Вызываем метод смарт-контракта</h2>
       <pre>
         <code>import Web3 from 'web3'</code>
-        <code>const web3 = new Web3(Web3.givenProvider || "ws://localhost:8545");</code>
+        <code>const web3 = <mark>new Web3(Web3.givenProvider || "ws://localhost:8545");</mark></code>
         <code> </code>
         <code>const abi = [...];</code>
         <code>const address = "0xe435e2a3cb5dc62c75d8bb2dba8470771405911d";</code>
@@ -629,7 +635,7 @@
     <section class="slide">
       <h2>Connect wallet (1)</h2>
       <pre>
-        <code>&lt;script src=&quot;https://.../web3.min.js&quot;&gt;&lt;/script&gt;</code>
+        <code>&lt;script <mark>src=&quot;https://.../web3.min.js&quot;</mark>&gt;&lt;/script&gt;</code>
         <code>&lt;input</code>
         <code>  type=&quot;button&quot;</code>
         <code>  value=&quot;Connect Wallet&quot;</code>
@@ -657,18 +663,14 @@
     <section class="slide">
       <h2>Реализации для React</h2>
       <ul class="big">
-        <li class="next">web3-react</li>
+        <li>web3-react</li>
         <li class="next">useDApp</li>
         <li class="next"><b>wagmi</b></li>
       </ul>
     </section>
 
-    <section class="slide clear">
-      <img class="cover h" src="pictures/web3modal.png" alt="" />
-    </section>
-
     <section class="slide">
-      <h2>Connect wallet для React (1)</h2>
+      <h2>@web3modal/react (1)</h2>
       <pre>
         <code>npm install</code>
         <code>  wagmi</code>
@@ -679,7 +681,22 @@
     </section>
 
     <section class="slide">
-      <h2>Connect wallet для React (2)</h2>
+      <h2>@web3modal/react (2)</h2>
+      <pre>
+          <code>return (</code>
+          <code>  &lt;&gt;</code>
+          <code>    <mark>&lt;WagmiConfig config={wagmiConfig}&gt;</mark></code>
+          <code>      &lt;HomePage /&gt;</code>
+          <code>    <mark>&lt;/WagmiConfig&gt;</mark></code>
+          <code> </code>
+          <code>    <mark>&lt;Web3Modal projectId={projectId} ethereumClient={ethereumClient} /&gt;</mark></code>
+          <code>  &lt;/&gt;</code>
+          <code>)</code>
+      </pre>
+    </section>
+
+    <section class="slide">
+      <h2>@web3modal/react (3)</h2>
       <pre>
         <code>import { Web3Button } from '@web3modal/react'</code>
         <code> </code>
@@ -687,6 +704,10 @@
         <code>  return <mark>&lt;Web3Button /&gt;</mark></code>
         <code>}</code>
       </pre>
+    </section>
+
+    <section class="slide clear">
+      <img class="cover h" src="pictures/web3modal.png" alt="" />
     </section>
 
     <!-- зачем это? -->
@@ -766,13 +787,34 @@
         <code> </code>
         <code>Accounts</code>
         <code>========</code>
-        <code>Account #0: 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266 (10000 ETH)</code>
+        <code><mark>Account #0: 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266 (10000 ETH)</mark></code>
         <code>Private Key: 0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efca...</code>
       </pre>
     </section>
 
     <section class="slide clear">
       <img class="cover h" src="pictures/networkDetails.png" alt="" />
+    </section>
+
+    <section class="slide">
+      <h2 class="shout brand">Деплой</h2>
+    </section>
+
+    <section class="slide clear">
+      <img class="cover h" src="pictures/fleek.png" alt="" />
+    </section>
+
+    <section class="slide">
+      <h2>Fleek</h2>
+      <pre>
+        <code>$ npm install -g @fleekhq/fleek-cli</code>
+        <code class="next">$ fleek site:init</code>
+        <code class="next">$ fleek site:deploy</code>
+      </pre>
+    </section>
+
+    <section class="slide clear">
+      <img class="cover w" src="pictures/brave-deploy.webp" alt="" />
     </section>
 
     <!-- Рецепт создания dApps -->
